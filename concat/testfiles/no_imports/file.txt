@@ -1,0 +1,29 @@
+Line 1
+Line 2
+Line 3
+Line 4
+//comment
+
+ 
+//import aaa
+//the above comment should not work because it's lower-case
+
+//these should not work because they are wrong type of comment
+/*IMPORT aaa*/
+/*IMPORT aaa
+ */
+
+aa //IMPORT someFile
+    a//IMPORT willNotImportMe
+    
+bare words will be preserved
+'like everything that is not a valid import'
+
+//total evil will also be preserved:
+l += l--, l=2
+
+//trailing newline will be preserved:
+
+
+
+
